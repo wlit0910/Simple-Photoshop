@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "BsVDf0Ya3GX1a6KOPi+yYZ2P/CDPYVAYfSTKJ/1cRjOfC9Kv60d/naOlmHdwzLKMdLOoYCQ16I07q1KB2e7q+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wlito\\Desktop\\07-05-2024\\Litowczenko_PIAO\\Litowczenko_PIAO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wlito\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512",
+    "C:\\Users\\wlito\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\wlito\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\wlito\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\wlito\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
