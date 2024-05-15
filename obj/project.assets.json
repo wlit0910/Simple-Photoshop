@@ -85,11 +85,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wlito\\Desktop\\07-05-2024\\Litowczenko_PIAO\\Litowczenko_PIAO.csproj",
+      "projectUniqueName": "C:\\Users\\wlito\\Desktop\\g\\Simple-Photoshop\\Litowczenko_PIAO.csproj",
       "projectName": "Litowczenko_PIAO",
-      "projectPath": "C:\\Users\\wlito\\Desktop\\07-05-2024\\Litowczenko_PIAO\\Litowczenko_PIAO.csproj",
+      "projectPath": "C:\\Users\\wlito\\Desktop\\g\\Simple-Photoshop\\Litowczenko_PIAO.csproj",
       "packagesPath": "C:\\Users\\wlito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wlito\\Desktop\\07-05-2024\\Litowczenko_PIAO\\obj\\",
+      "outputPath": "C:\\Users\\wlito\\Desktop\\g\\Simple-Photoshop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wlito\\AppData\\Roaming\\NuGet\\NuGet.Config",

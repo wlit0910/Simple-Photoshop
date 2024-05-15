@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BsVDf0Ya3GX1a6KOPi+yYZ2P/CDPYVAYfSTKJ/1cRjOfC9Kv60d/naOlmHdwzLKMdLOoYCQ16I07q1KB2e7q+A==",
+  "dgSpecHash": "HKlm70XBDih7OrVSf1EDKlnEFH34+2tjqmESo1zyTtqyi8XMYi+bmeMibRvCJ1c9SfogRQNv2+owiUCKlxKsZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wlito\\Desktop\\07-05-2024\\Litowczenko_PIAO\\Litowczenko_PIAO.csproj",
+  "projectFilePath": "C:\\Users\\wlito\\Desktop\\g\\Simple-Photoshop\\Litowczenko_PIAO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wlito\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512",
     "C:\\Users\\wlito\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",

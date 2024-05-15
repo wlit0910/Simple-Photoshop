@@ -16,6 +16,10 @@ namespace Litowczenko_PIAO
         System.Drawing.Color kolorRGB = new System.Drawing.Color();
         public int[] tablica = new int[256];
 
+        public int[] wartosciR = new int[256];
+        public int[] wartosciG = new int[256];
+        public int[] wartosciB = new int[256];
+
         bool sprawdzCzySzarosc = false;
         bool sprawdzCzyKolor = false;
 
@@ -154,7 +158,7 @@ namespace Litowczenko_PIAO
 
                         */
 
-            double[] wartosciSzare = new double[skalaSzarosci.Width * skalaSzarosci.Height];
+            int[] wartosciSzare = new int[skalaSzarosci.Width * skalaSzarosci.Height];
 
             int i2 = 0;
             for (int x = 0; x < skalaSzarosci.Width; x++)
@@ -219,11 +223,11 @@ namespace Litowczenko_PIAO
 
             DaneStatystyczne dane = new DaneStatystyczne();
             dane.Show();
-            dane.PobierzDaneStatystyczne("Histogram szaroœci",minGray,maxGray,srednia,mediana,odchylenieST);
+            dane.PobierzDaneStatystyczne("Histogram szaroœci", minGray, maxGray, srednia, mediana, odchylenieST);
 
 
-    //        MessageBox.Show("Minimalna wartoœæ: " + minGray.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: "
-    //+ maxGray.ToString() + "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
+            //        MessageBox.Show("Minimalna wartoœæ: " + minGray.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: "
+            //+ maxGray.ToString() + "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
 
         }
 
@@ -261,7 +265,7 @@ namespace Litowczenko_PIAO
                     }
                 }
 
-                double[] wartosciR = new double[obrazRGB.Width * obrazRGB.Height];
+                wartosciR = new int[obrazRGB.Width * obrazRGB.Height];
 
                 int i2 = 0;
                 for (int x = 0; x < obrazRGB.Width; x++)
@@ -346,7 +350,7 @@ namespace Litowczenko_PIAO
                 }
             }
 
-            double[] wartosciG = new double[obrazRGB.Width * obrazRGB.Height];
+            wartosciG = new int[obrazRGB.Width * obrazRGB.Height];
 
             int i2 = 0;
             for (int x = 0; x < obrazRGB.Width; x++)
@@ -364,7 +368,7 @@ namespace Litowczenko_PIAO
             mediana = Math.Round(mediana, 2);
 
             chart1.Series.Clear();
-           // chart1.ChartAreas[0].AxisX.Title = "Jasnoœæ pikseli";
+            // chart1.ChartAreas[0].AxisX.Title = "Jasnoœæ pikseli";
             //chart1.ChartAreas[0].AxisY.Title = "Liczba pikseli";
             chart1.ChartAreas[0].AxisY.IsMarginVisible = false;
             chart1.ChartAreas[0].AxisX.IsMarginVisible = false;
@@ -435,7 +439,7 @@ namespace Litowczenko_PIAO
                 }
             }
 
-            double[] wartosciB = new double[obrazRGB.Width * obrazRGB.Height];
+            wartosciB = new int[obrazRGB.Width * obrazRGB.Height];
 
             int i2 = 0;
             for (int x = 0; x < obrazRGB.Width; x++)
@@ -503,7 +507,7 @@ namespace Litowczenko_PIAO
         }
 
 
-        private double ObliczMediane(double[] wartosci)
+        private double ObliczMediane(int[] wartosci)
         {
             Array.Sort(wartosci);
             int wartoscSrodkowa = wartosci.Length / 2;
@@ -520,7 +524,7 @@ namespace Litowczenko_PIAO
             }
         }
 
-        private double ObliczOdchylenieST(double[] wartosci, double srednia)
+        private double ObliczOdchylenieST(int[] wartosci, double srednia)
         {
             double sumaKwadratow = 0;
             foreach (double value in wartosci)
@@ -537,5 +541,191 @@ namespace Litowczenko_PIAO
             button3.PerformClick();
             chart1.Series.Clear();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog
+openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png) | *.jpg; *.jpeg: *.gif; *.bmp; *.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox3.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            sprawdzCzySzarosc = false;
+            sprawdzCzyKolor = false;
+
+            if (pictureBox3.Image != null)
+            {
+                Bitmap oryginalne = new Bitmap(pictureBox3.Image);
+                Bitmap skalaSzarosci = DoSkaliSzarosci(oryginalne);
+                pictureBox3.Image = skalaSzarosci;
+            }
+
+        }
+
+        private void button11_Click(object sender, EventArgs e) // potêgowanie
+        {
+            int x, y;
+            skalaSzarosci = new Bitmap(pictureBox3.Image);
+            for (x = 0; x < skalaSzarosci.Width; x++)
+            {
+                for (y = 0; y < skalaSzarosci.Height; y++)
+                {
+                    Color pixelColor = skalaSzarosci.GetPixel(x, y);
+                    int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114)); // przekszta³canie na skalê szaroœci
+
+                    //          L' = ( L^2 / 255^2 ) * 255   
+                    int grayScale = (int)(((greyScale * greyScale) / 65025.0) * 255);
+                    Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+                    skalaSzarosci.SetPixel(x, y, newColor);
+                }
+            }
+            pictureBox3.Image = skalaSzarosci;
+        }
+
+        private void button10_Click(object sender, EventArgs e) // odœwie¿ zak³adka ÆW4
+        {
+            OpenFileDialog
+openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png) | *.jpg; *.jpeg: *.gif; *.bmp; *.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox3.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            sprawdzCzySzarosc = false;
+            sprawdzCzyKolor = false;
+        }
+
+        private void button13_Click(object sender, EventArgs e) // pierwiastkowanie
+        {
+            int x, y;
+            skalaSzarosci = new Bitmap(pictureBox3.Image);
+            for (x = 0; x < skalaSzarosci.Width; x++)
+            {
+                for (y = 0; y < skalaSzarosci.Height; y++)
+                {
+                    Color pixelColor = skalaSzarosci.GetPixel(x, y);
+                    int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
+                    int grayScale = (int)(((Math.Sqrt(greyScale)) / 15.96) * 255);
+                   // int grayScale = (int)(((Math.Sqrt(greyScale)))); 
+                    Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+                    tablica[greyScale] += 1;
+                    wartosciR[pixelColor.R] += 1;
+                    wartosciG[pixelColor.G] += 1;
+                    wartosciB[pixelColor.B] += 1;
+                    skalaSzarosci.SetPixel(x, y, newColor);
+                }
+            }
+            pictureBox3.Image = skalaSzarosci;
+        }
+
+        private void button12_Click(object sender, EventArgs e) // logarytmowanie
+        {
+            int x, y;
+            skalaSzarosci = new Bitmap(pictureBox3.Image);
+            for (x = 0; x < skalaSzarosci.Width; x++)
+            {
+                for (y = 0; y < skalaSzarosci.Height; y++)
+                {
+                    Color pixelColor = skalaSzarosci.GetPixel(x, y);
+                    int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
+                    int grayScale = (int)(((Math.Log10(greyScale)) / 2.4) * 255);
+                    //int grayScale = (int)(((Math.Log10(greyScale))) + 1 );
+                    Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+                    tablica[greyScale] += 1;
+                    wartosciR[pixelColor.R] += 1;
+                    wartosciG[pixelColor.G] += 1;
+                    wartosciB[pixelColor.B] += 1;
+                    skalaSzarosci.SetPixel(x, y, newColor);
+                }
+            }
+            pictureBox3.Image = skalaSzarosci;
+        }
+
+
+
+        //private void potegowanie_Click(object sender, EventArgs e)
+        //{
+        //    int x, y;
+        //    skalaSzarosci = new Bitmap(pictureBox3.Image);
+        //    for (x = 0; x < skalaSzarosci.Width; x++)
+        //    {
+        //        for (y = 0; y < skalaSzarosci.Height; y++)
+        //        {
+        //            Color pixelColor = skalaSzarosci.GetPixel(x, y);
+        //            int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
+        //            int grayScale = (int)(((greyScale * greyScale) / 65025.0) * 255);
+        //            Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+        //            wartosci[greyScale] += 1;
+        //            wartosciRed[pixelColor.R] += 1;
+        //            wartosciGreen[pixelColor.G] += 1;
+        //            wartosciBlue[pixelColor.B] += 1;
+        //            image1.SetPixel(x, y, newColor);
+        //        }
+        //    }
+        //    pictureBox2.Image = image1;
+        //}
+
+
+
+        //private void pierwiastkowanie_Click(object sender, EventArgs e)
+        //{
+        //    int x, y;
+        //    image1 = new Bitmap(pictureBox1.Image);
+        //    for (x = 0; x < image1.Width; x++)
+        //    {
+        //        for (y = 0; y < image1.Height; y++)
+        //        {
+        //            Color pixelColor = image1.GetPixel(x, y);
+        //            int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
+        //            int grayScale = (int)(((Math.Sqrt(greyScale)) / 16.0) * 255);
+        //            Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+        //            wartosci[greyScale] += 1;
+        //            wartosciRed[pixelColor.R] += 1;
+        //            wartosciGreen[pixelColor.G] += 1;
+        //            wartosciBlue[pixelColor.B] += 1;
+        //            image1.SetPixel(x, y, newColor);
+        //        }
+        //    }
+        //    pictureBox2.Image = image1;
+        //}
+
+        //private void logarytmowanie_Click(object sender, EventArgs e)
+        //{
+        //    int x, y;
+        //    image1 = new Bitmap(pictureBox1.Image);
+        //    for (x = 0; x < image1.Width; x++)
+        //    {
+        //        for (y = 0; y < image1.Height; y++)
+        //        {
+        //            Color pixelColor = image1.GetPixel(x, y);
+        //            int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
+        //            int grayScale = (int)(((Math.Log10(greyScale)) / 2.4) * 255);
+        //            Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
+
+
+        //            wartosci[greyScale] += 1;
+        //            wartosciRed[pixelColor.R] += 1;
+        //            wartosciGreen[pixelColor.G] += 1;
+        //            wartosciBlue[pixelColor.B] += 1;
+        //            image1.SetPixel(x, y, newColor);
+        //        }
+        //    }
+        //    pictureBox2.Image = image1;
+        //}
     }
 }

@@ -62,3 +62,114 @@ C:\Users\wlito\Desktop\07-05-2024\Litowczenko_PIAO\obj\Debug\net6.0-windows\refi
 C:\Users\wlito\Desktop\07-05-2024\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
 C:\Users\wlito\Desktop\07-05-2024\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
 C:\Users\wlito\Desktop\07-05-2024\Litowczenko_PIAO\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.exe
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.deps.json
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.runtimeconfig.json
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.DaneStatystyczne.resources
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Form1.resources
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Histogram.resources
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.GenerateResource.cache
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfo.cs
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CopyComplete
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\refint\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
+C:\Users\student\Desktop\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.exe
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.deps.json
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.runtimeconfig.json
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.AssemblyReference.cache
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.DaneStatystyczne.resources
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Form1.resources
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Histogram.resources
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.GenerateResource.cache
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfoInputs.cache
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfo.cs
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CoreCompileInputs.cache
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowcze.FEDEE8E1.Up2Date
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\refint\Litowczenko_PIAO.dll
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
+C:\Users\wlito\OneDrive\Pulpit\nowy\07-05-2024 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.exe
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.deps.json
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.runtimeconfig.json
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.DaneStatystyczne.resources
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Form1.resources
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Histogram.resources
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.GenerateResource.cache
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfo.cs
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowcze.FEDEE8E1.Up2Date
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\refint\Litowczenko_PIAO.dll
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
+C:\Users\student\Desktop\skonczone (2)\Litowczenko_PIAO\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.exe
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.deps.json
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.runtimeconfig.json
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.AssemblyReference.cache
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.DaneStatystyczne.resources
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Form1.resources
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.Histogram.resources
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.GenerateResource.cache
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfoInputs.cache
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfo.cs
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CoreCompileInputs.cache
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CopyComplete
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\refint\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
+C:\Users\wlito\Desktop\skonczone3 1\Litowczenko_PIAO\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\Litowczenko_PIAO.exe
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\Litowczenko_PIAO.deps.json
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\Litowczenko_PIAO.runtimeconfig.json
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.AssemblyReference.cache
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.DaneStatystyczne.resources
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.Form1.resources
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.Histogram.resources
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.GenerateResource.cache
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfoInputs.cache
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.AssemblyInfo.cs
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CoreCompileInputs.cache
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.sourcelink.json
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.csproj.CopyComplete
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\refint\Litowczenko_PIAO.dll
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.pdb
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\Litowczenko_PIAO.genruntimeconfig.cache
+C:\Users\wlito\Desktop\g\Simple-Photoshop\obj\Debug\net6.0-windows\ref\Litowczenko_PIAO.dll
