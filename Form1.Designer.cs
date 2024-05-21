@@ -63,6 +63,17 @@
             label4 = new Label();
             pictureBox3 = new PictureBox();
             tabPage4 = new TabPage();
+            button18 = new Button();
+            textBox2 = new TextBox();
+            label7 = new Label();
+            label6 = new Label();
+            textBox1 = new TextBox();
+            button17 = new Button();
+            button16 = new Button();
+            button15 = new Button();
+            button14 = new Button();
+            label5 = new Label();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -72,15 +83,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(367, 615);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(321, 461);
             button2.Name = "button2";
-            button2.Size = new Size(189, 71);
+            button2.Size = new Size(165, 53);
             button2.TabIndex = 5;
             button2.Text = "Przekształć obraz do skali szarości i wyświetl go";
             button2.UseVisualStyleBackColor = true;
@@ -88,10 +100,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(37, 91);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(32, 68);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(519, 444);
+            pictureBox1.Size = new Size(454, 333);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -99,10 +110,9 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(37, 615);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(32, 461);
             button1.Name = "button1";
-            button1.Size = new Size(122, 71);
+            button1.Size = new Size(107, 53);
             button1.TabIndex = 3;
             button1.Text = "Wczytaj i wyświetl obraz";
             button1.UseVisualStyleBackColor = true;
@@ -111,9 +121,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(486, 67);
+            label1.Location = new Point(425, 50);
             label1.Name = "label1";
-            label1.Size = new Size(79, 20);
+            label1.Size = new Size(61, 15);
             label1.TabIndex = 6;
             label1.Text = "30.04.2024";
             // 
@@ -123,8 +133,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { plikToolStripMenuItem, opcjeToolStripMenuItem, pomocToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 3, 0, 3);
-            menuStrip1.Size = new Size(607, 30);
+            menuStrip1.Size = new Size(531, 24);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -132,31 +141,31 @@
             // 
             plikToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { zapiszToolStripMenuItem, wyjdźToolStripMenuItem });
             plikToolStripMenuItem.Name = "plikToolStripMenuItem";
-            plikToolStripMenuItem.Size = new Size(46, 24);
+            plikToolStripMenuItem.Size = new Size(38, 20);
             plikToolStripMenuItem.Text = "&Plik";
             // 
             // zapiszToolStripMenuItem
             // 
             zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
-            zapiszToolStripMenuItem.Size = new Size(135, 26);
+            zapiszToolStripMenuItem.Size = new Size(107, 22);
             zapiszToolStripMenuItem.Text = "&Zapisz";
             // 
             // wyjdźToolStripMenuItem
             // 
             wyjdźToolStripMenuItem.Name = "wyjdźToolStripMenuItem";
-            wyjdźToolStripMenuItem.Size = new Size(135, 26);
+            wyjdźToolStripMenuItem.Size = new Size(107, 22);
             wyjdźToolStripMenuItem.Text = "&Wyjdź";
             // 
             // opcjeToolStripMenuItem
             // 
             opcjeToolStripMenuItem.Name = "opcjeToolStripMenuItem";
-            opcjeToolStripMenuItem.Size = new Size(62, 24);
+            opcjeToolStripMenuItem.Size = new Size(50, 20);
             opcjeToolStripMenuItem.Text = "&Opcje";
             // 
             // pomocToolStripMenuItem
             // 
             pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            pomocToolStripMenuItem.Size = new Size(68, 24);
+            pomocToolStripMenuItem.Size = new Size(57, 20);
             pomocToolStripMenuItem.Text = "&Pomoc";
             // 
             // tabControl1
@@ -166,11 +175,10 @@
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 30);
-            tabControl1.Margin = new Padding(3, 4, 3, 4);
+            tabControl1.Location = new Point(0, 24);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(607, 799);
+            tabControl1.Size = new Size(531, 598);
             tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -180,11 +188,10 @@
             tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(button1);
             tabPage1.Controls.Add(button2);
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Margin = new Padding(3, 4, 3, 4);
+            tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(599, 766);
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(523, 570);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "ĆW1";
             // 
@@ -201,20 +208,18 @@
             tabPage2.Controls.Add(pictureBox2);
             tabPage2.Controls.Add(button3);
             tabPage2.Controls.Add(label2);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Margin = new Padding(3, 4, 3, 4);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(599, 766);
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(523, 570);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "ĆW2";
             // 
             // button4
             // 
-            button4.Location = new Point(45, 549);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(39, 412);
             button4.Name = "button4";
-            button4.Size = new Size(130, 56);
+            button4.Size = new Size(114, 42);
             button4.TabIndex = 17;
             button4.Text = "Odśwież";
             button4.UseVisualStyleBackColor = true;
@@ -223,9 +228,9 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(494, 24);
+            label3.Location = new Point(432, 18);
             label3.Name = "label3";
-            label3.Size = new Size(79, 20);
+            label3.Size = new Size(61, 15);
             label3.TabIndex = 16;
             label3.Text = "07.05.2024";
             // 
@@ -235,23 +240,21 @@
             chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chart1.Legends.Add(legend1);
-            chart1.Location = new Point(45, 613);
-            chart1.Margin = new Padding(3, 4, 3, 4);
+            chart1.Location = new Point(39, 460);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chart1.Series.Add(series1);
-            chart1.Size = new Size(519, 139);
+            chart1.Size = new Size(454, 104);
             chart1.TabIndex = 15;
             chart1.Text = "chart1";
             // 
             // button8
             // 
-            button8.Location = new Point(433, 544);
-            button8.Margin = new Padding(3, 4, 3, 4);
+            button8.Location = new Point(379, 408);
             button8.Name = "button8";
-            button8.Size = new Size(130, 61);
+            button8.Size = new Size(114, 46);
             button8.TabIndex = 14;
             button8.Text = "Wyświetl histogram B";
             button8.UseVisualStyleBackColor = true;
@@ -259,10 +262,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(433, 476);
-            button7.Margin = new Padding(3, 4, 3, 4);
+            button7.Location = new Point(379, 357);
             button7.Name = "button7";
-            button7.Size = new Size(130, 67);
+            button7.Size = new Size(114, 50);
             button7.TabIndex = 13;
             button7.Text = "Wyświetl histogram G";
             button7.UseVisualStyleBackColor = true;
@@ -270,10 +272,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(296, 544);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(259, 408);
             button6.Name = "button6";
-            button6.Size = new Size(130, 61);
+            button6.Size = new Size(114, 46);
             button6.TabIndex = 12;
             button6.Text = "Wyświetl histogram R";
             button6.UseVisualStyleBackColor = true;
@@ -281,10 +282,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point(296, 476);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(259, 357);
             button5.Name = "button5";
-            button5.Size = new Size(130, 67);
+            button5.Size = new Size(114, 50);
             button5.TabIndex = 11;
             button5.Text = "Wyświetl histogram szarości";
             button5.UseVisualStyleBackColor = true;
@@ -292,10 +292,9 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(45, 24);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(39, 18);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(519, 444);
+            pictureBox2.Size = new Size(454, 333);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -303,10 +302,9 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(45, 476);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(39, 357);
             button3.Name = "button3";
-            button3.Size = new Size(130, 71);
+            button3.Size = new Size(114, 53);
             button3.TabIndex = 8;
             button3.Text = "Wczytaj i wyświetl obraz";
             button3.UseVisualStyleBackColor = true;
@@ -315,9 +313,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(464, 45);
+            label2.Location = new Point(406, 34);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 7;
             label2.Text = "07.05.2024";
             // 
@@ -331,19 +329,17 @@
             tabPage3.Controls.Add(button9);
             tabPage3.Controls.Add(label4);
             tabPage3.Controls.Add(pictureBox3);
-            tabPage3.Location = new Point(4, 29);
-            tabPage3.Margin = new Padding(3, 4, 3, 4);
+            tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(599, 766);
+            tabPage3.Size = new Size(523, 570);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "ĆW3";
             // 
             // button13
             // 
-            button13.Location = new Point(279, 585);
-            button13.Margin = new Padding(3, 4, 3, 4);
+            button13.Location = new Point(244, 439);
             button13.Name = "button13";
-            button13.Size = new Size(130, 67);
+            button13.Size = new Size(114, 50);
             button13.TabIndex = 22;
             button13.Text = "Pierwiastkowanie";
             button13.UseVisualStyleBackColor = true;
@@ -351,10 +347,9 @@
             // 
             // button12
             // 
-            button12.Location = new Point(415, 507);
-            button12.Margin = new Padding(3, 4, 3, 4);
+            button12.Location = new Point(363, 380);
             button12.Name = "button12";
-            button12.Size = new Size(130, 67);
+            button12.Size = new Size(114, 50);
             button12.TabIndex = 21;
             button12.Text = "Logarytmowanie";
             button12.UseVisualStyleBackColor = true;
@@ -362,10 +357,9 @@
             // 
             // button11
             // 
-            button11.Location = new Point(279, 507);
-            button11.Margin = new Padding(3, 4, 3, 4);
+            button11.Location = new Point(244, 380);
             button11.Name = "button11";
-            button11.Size = new Size(130, 67);
+            button11.Size = new Size(114, 50);
             button11.TabIndex = 20;
             button11.Text = "Potęgowanie";
             button11.UseVisualStyleBackColor = true;
@@ -373,10 +367,9 @@
             // 
             // button10
             // 
-            button10.Location = new Point(26, 585);
-            button10.Margin = new Padding(3, 4, 3, 4);
+            button10.Location = new Point(23, 439);
             button10.Name = "button10";
-            button10.Size = new Size(130, 56);
+            button10.Size = new Size(114, 42);
             button10.TabIndex = 19;
             button10.Text = "Odśwież";
             button10.UseVisualStyleBackColor = true;
@@ -385,10 +378,9 @@
             // button9
             // 
             button9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.Location = new Point(26, 507);
-            button9.Margin = new Padding(3, 4, 3, 4);
+            button9.Location = new Point(23, 380);
             button9.Name = "button9";
-            button9.Size = new Size(130, 71);
+            button9.Size = new Size(114, 53);
             button9.TabIndex = 18;
             button9.Text = "Wczytaj i wyświetl obraz";
             button9.UseVisualStyleBackColor = true;
@@ -397,42 +389,150 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(455, 31);
+            label4.Location = new Point(398, 23);
             label4.Name = "label4";
-            label4.Size = new Size(79, 20);
+            label4.Size = new Size(61, 15);
             label4.TabIndex = 17;
             label4.Text = "14.05.2024";
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(26, 55);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Location = new Point(23, 41);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(519, 444);
+            pictureBox3.Size = new Size(454, 333);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 10;
             pictureBox3.TabStop = false;
             // 
             // tabPage4
             // 
-            tabPage4.Location = new Point(4, 29);
-            tabPage4.Margin = new Padding(3, 4, 3, 4);
+            tabPage4.Controls.Add(button18);
+            tabPage4.Controls.Add(textBox2);
+            tabPage4.Controls.Add(label7);
+            tabPage4.Controls.Add(label6);
+            tabPage4.Controls.Add(textBox1);
+            tabPage4.Controls.Add(button17);
+            tabPage4.Controls.Add(button16);
+            tabPage4.Controls.Add(button15);
+            tabPage4.Controls.Add(button14);
+            tabPage4.Controls.Add(label5);
+            tabPage4.Controls.Add(pictureBox4);
+            tabPage4.Location = new Point(4, 24);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(599, 766);
+            tabPage4.Size = new Size(523, 570);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "ĆW4";
             tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button18
+            // 
+            button18.Location = new Point(160, 520);
+            button18.Name = "button18";
+            button18.Size = new Size(114, 42);
+            button18.TabIndex = 28;
+            button18.Text = "Podwójne ograniczeine";
+            button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(381, 468);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 27;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(296, 417);
+            label7.Name = "label7";
+            label7.Size = new Size(68, 15);
+            label7.TabIndex = 26;
+            label7.Text = "Próg dolny:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(296, 476);
+            label6.Name = "label6";
+            label6.Size = new Size(69, 15);
+            label6.TabIndex = 25;
+            label6.Text = "Próg górny:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(381, 409);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 24;
+            // 
+            // button17
+            // 
+            button17.Location = new Point(160, 457);
+            button17.Name = "button17";
+            button17.Size = new Size(114, 42);
+            button17.TabIndex = 23;
+            button17.Text = "Próg dolny";
+            button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
+            // 
+            // button16
+            // 
+            button16.Location = new Point(160, 397);
+            button16.Name = "button16";
+            button16.Size = new Size(114, 42);
+            button16.TabIndex = 22;
+            button16.Text = "Próg górny";
+            button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
+            // 
+            // button15
+            // 
+            button15.Location = new Point(27, 457);
+            button15.Name = "button15";
+            button15.Size = new Size(114, 42);
+            button15.TabIndex = 21;
+            button15.Text = "Skala szarości";
+            button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(27, 397);
+            button14.Name = "button14";
+            button14.Size = new Size(114, 42);
+            button14.TabIndex = 20;
+            button14.Text = "Wczytaj";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(420, 28);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 15);
+            label5.TabIndex = 18;
+            label5.Text = "21.05.2024";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(27, 46);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(454, 333);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 5;
+            pictureBox4.TabStop = false;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(607, 829);
+            ClientSize = new Size(531, 622);
             Controls.Add(tabControl1);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -450,6 +550,9 @@
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -488,5 +591,16 @@
         private Button button12;
         private Button button11;
         private Button button10;
+        private Label label5;
+        private PictureBox pictureBox4;
+        private TextBox textBox2;
+        private Label label7;
+        private Label label6;
+        private TextBox textBox1;
+        private Button button17;
+        private Button button16;
+        private Button button15;
+        private Button button14;
+        private Button button18;
     }
 }
