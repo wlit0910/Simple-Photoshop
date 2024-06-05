@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Litowczenko_PIAO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35a4dd8367246a1fb661d6af63deb92bbfeb2a85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+133ca472d7b60f166f2e42e3802e3020383bbd0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Litowczenko_PIAO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Litowczenko_PIAO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

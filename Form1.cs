@@ -1,6 +1,10 @@
 using System;
+using System.Drawing.Imaging;
 using System.Net.NetworkInformation;
+using System.Reflection.Emit;
+using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Litowczenko_PIAO
@@ -49,12 +53,15 @@ namespace Litowczenko_PIAO
                 Bitmap skalaSzarosci = DoSkaliSzarosci(oryginalne);
                 pictureBox1.Image = skalaSzarosci;
             }
+            else
+            {
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
+            }
         }
 
         private Bitmap DoSkaliSzarosci(Bitmap original) // metoda przekszta³caj¹ca obraz do skali szaroœci
         {
             Bitmap skalaSzarosci = new Bitmap(original.Width, original.Height);
-       
             for (int x = 0; x < original.Width; x++)
             {
                 for (int y = 0; y < original.Height; y++)
@@ -229,11 +236,16 @@ namespace Litowczenko_PIAO
                 DaneStatystyczne dane = new DaneStatystyczne();
                 dane.Show();
                 dane.PobierzDaneStatystyczne("Histogram szaroœci", minGray, maxGray, srednia, mediana, odchylenieST);
+
+
+                //        MessageBox.Show("Minimalna wartoœæ: " + minGray.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: "
+                //+ maxGray.ToString() + "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
+
         }
 
 
@@ -242,6 +254,7 @@ namespace Litowczenko_PIAO
         {
             try
             {
+
 
                 if (sprawdzCzySzarosc == true)
                 {
@@ -330,12 +343,13 @@ namespace Litowczenko_PIAO
                     dane.Show();
                     dane.PobierzDaneStatystyczne("Histogram RED", minR, maxR, srednia, mediana, odchylenieST);
 
+                    //MessageBox.Show("Minimalna wartoœæ: " + minR.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: " + maxR.ToString()
+                    //    + "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
                 }
-
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
@@ -343,6 +357,8 @@ namespace Litowczenko_PIAO
         {
             try
             {
+
+
                 int[] tablicaG = new int[256];
                 System.Drawing.Color kolorRGB2 = new System.Drawing.Color();
                 Bitmap obrazRGB = new Bitmap(pictureBox2.Image);
@@ -420,19 +436,23 @@ namespace Litowczenko_PIAO
                 DaneStatystyczne dane = new DaneStatystyczne();
                 dane.Show();
                 dane.PobierzDaneStatystyczne("Histogram GREEN", minG, maxG, srednia, mediana, odchylenieST);
+
+                //MessageBox.Show("Minimalna wartoœæ: " + minG.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: " + maxG.ToString() +
+                //    "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
+
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
-
-
         }
 
         private void button8_Click(object sender, EventArgs e) // HISTOGRAM BLUE
         {
             try
             {
+
+
                 int[] tablicaB = new int[256];
                 Bitmap obrazRGB = new Bitmap(pictureBox2.Image);
                 System.Drawing.Color kolorRGB2 = new System.Drawing.Color();
@@ -517,10 +537,14 @@ namespace Litowczenko_PIAO
                 DaneStatystyczne dane = new DaneStatystyczne();
                 dane.Show();
                 dane.PobierzDaneStatystyczne("Histogram BLUE", minB, maxB, srednia, mediana, odchylenieST);
+
+
+                //MessageBox.Show("Minimalna wartoœæ: " + minB.ToString() + "\n\n" + "Œrednia wartoœæ: " + srednia.ToString() + "\n\nMaksymalna wartoœæ: " + maxB.ToString() +
+                //    "\n\nMediana: " + mediana.ToString() + "\n\nOdchylenie standardowe: " + odchylenieST.ToString());
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
@@ -587,8 +611,6 @@ openFileDialog1 = new OpenFileDialog();
         {
             try
             {
-
-
                 int x, y;
                 skalaSzarosci = new Bitmap(pictureBox3.Image);
                 for (x = 0; x < skalaSzarosci.Width; x++)
@@ -610,7 +632,7 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
@@ -659,7 +681,7 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub odœwie¿.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
@@ -667,6 +689,8 @@ openFileDialog1 = new OpenFileDialog();
         {
             try
             {
+
+
                 int x, y;
                 skalaSzarosci = new Bitmap(pictureBox3.Image);
                 for (x = 0; x < skalaSzarosci.Width; x++)
@@ -676,6 +700,7 @@ openFileDialog1 = new OpenFileDialog();
                         Color pixelColor = skalaSzarosci.GetPixel(x, y);
                         int greyScale = (int)((int)(pixelColor.R * 0.299) + (pixelColor.G * 0.587) + (pixelColor.B * 0.114));
                         int grayScale = (int)(((Math.Log10(greyScale)) / 2.4) * 255);
+                        //int grayScale = (int)(((Math.Log10(greyScale))) + 1 );
                         Color newColor = Color.FromArgb(pixelColor.A, grayScale, grayScale, grayScale);
 
 
@@ -690,7 +715,7 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                MessageBox.Show("Wczytaj najpierw zdjêcie lub wczytaj ponownie zdjêcie.");
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
@@ -709,19 +734,29 @@ openFileDialog1 = new OpenFileDialog();
 
         private void button15_Click(object sender, EventArgs e)
         {
-            skalaSzarosci = new Bitmap(pictureBox4.Image);
+            try
+            {
+                skalaSzarosci = new Bitmap(pictureBox4.Image);
 
-            skalaSzarosci = DoSkaliSzarosci(skalaSzarosci);
-            pictureBox4.Image = skalaSzarosci;
+                skalaSzarosci = DoSkaliSzarosci(skalaSzarosci);
+                pictureBox4.Image = skalaSzarosci;
+            }
+            catch
+            {
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
+            }
         }
 
         private void button18_Click(object sender, EventArgs e) // podwójne
         {
-            skalaSzarosci = new Bitmap(pictureBox4.Image);
-            czarne = 0;
-            biale = 0;
             try
             {
+
+
+                skalaSzarosci = new Bitmap(pictureBox4.Image);
+                czarne = 0;
+                biale = 0;
+
                 for (int x = 0; x < skalaSzarosci.Width; x++)
                 {
                     for (int y = 0; y < skalaSzarosci.Height; y++)
@@ -768,17 +803,19 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                MessageBox.Show("Wpisz odpowiadaj¹ce dane w polach tekstowych lub wczytaj ponownie zdjêcie.");
+                MessageBox.Show("Wczytaj zdjêcie lub wpisz odpowiedni¹ wartoœæ progu");
             }
+
         }
 
         private void button17_Click(object sender, EventArgs e) // dolny
         {
-            skalaSzarosci = new Bitmap(pictureBox4.Image);
-            czarne = 0;
-            biale = 0;
             try
             {
+                skalaSzarosci = new Bitmap(pictureBox4.Image);
+                czarne = 0;
+                biale = 0;
+
 
                 for (int x = 0; x < skalaSzarosci.Width; x++)
                 {
@@ -824,19 +861,17 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                 MessageBox.Show("Wpisz odpowiadaj¹ce dane w polach tekstowych lub wczytaj ponownie zdjêcie.");
+                MessageBox.Show("Wczytaj zdjêcie lub wpisz odpowiedni¹ wartoœæ progu");
             }
         }
 
         private void button16_Click(object sender, EventArgs e) // górny
         {
-            skalaSzarosci = new Bitmap(pictureBox4.Image);
-            czarne = 0;
-            biale = 0;
-
             try
             {
-
+                skalaSzarosci = new Bitmap(pictureBox4.Image);
+                czarne = 0;
+                biale = 0;
 
                 for (int x = 0; x < skalaSzarosci.Width; x++)
                 {
@@ -882,12 +917,604 @@ openFileDialog1 = new OpenFileDialog();
             }
             catch
             {
-                MessageBox.Show("Wpisz odpowiadaj¹ce dane w polach tekstowych lub wczytaj ponownie zdjêcie.");
+                MessageBox.Show("Wczytaj zdjêcie lub wpisz odpowiedni¹ wartoœæ progu");
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog
+openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png) | *.jpg; *.jpeg: *.gif; *.bmp; *.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox5.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog
+openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png) | *.jpg; *.jpeg: *.gif; *.bmp; *.png";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox5.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e) // pozioma maska Sobela
+        {
+            try
+            {
+                Bitmap img = new Bitmap(pictureBox5.Image);
+                // przekszta³cenie do skali szaroœci
+                Bitmap skalaSzarosci = DoSkaliSzarosci(img);
+
+                pictureBox5.Image = FiltrSobel_Poziomy(skalaSzarosci);
+            }
+            catch
+            {
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
+            }
+
+        }
+
+
+        private void button22_Click(object sender, EventArgs e) // pionowa maska Sobela
+        {
+            try
+            {
+                Bitmap img = new Bitmap(pictureBox5.Image);
+                // przekszta³cenie do skali szaroœci
+                Bitmap skalaSzarosci = DoSkaliSzarosci(img);
+
+                pictureBox5.Image = FiltrSobel_Pionowy(skalaSzarosci);
+            }
+            catch
+            {
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
             }
         }
 
 
 
+        private Bitmap FiltrSobel_Poziomy(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
 
+            int[,] sobelPoz = new int[,] // pozioma maska Sobela
+            {
+                { -1, -2, -1 },
+                {  0,  0,  0 },
+                {  1,  2,  1 }
+            };
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int pixelX = (
+                        (sobelPoz[0, 0] * szary.GetPixel(x - 1, y - 1).R) +
+                        (sobelPoz[0, 1] * szary.GetPixel(x, y - 1).R) +
+                        (sobelPoz[0, 2] * szary.GetPixel(x + 1, y - 1).R) +
+                        (sobelPoz[1, 0] * szary.GetPixel(x - 1, y).R) +
+                        (sobelPoz[1, 1] * szary.GetPixel(x, y).R) +
+                        (sobelPoz[1, 2] * szary.GetPixel(x + 1, y).R) +
+                        (sobelPoz[2, 0] * szary.GetPixel(x - 1, y + 1).R) +
+                        (sobelPoz[2, 1] * szary.GetPixel(x, y + 1).R) +
+                        (sobelPoz[2, 2] * szary.GetPixel(x + 1, y + 1).R)
+                    );
+
+                    // normalzacja - sprowadzenie wartoœci jasnoœci piksela do zakresu 0-255
+                    int gray = Math.Min(Math.Max(pixelX, 0), 255);
+
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+
+        private Bitmap FiltrSobel_Pionowy(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] sobelPion = new int[,] // pionowa maska Sobela
+            {
+                { -1, 0, 1 },
+                { -2, 0, 2 },
+                { -1, 0, 1 }
+            };
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int pixelY = (
+                        (sobelPion[0, 0] * szary.GetPixel(x - 1, y - 1).R) +
+                        (sobelPion[0, 1] * szary.GetPixel(x, y - 1).R) +
+                        (sobelPion[0, 2] * szary.GetPixel(x + 1, y - 1).R) +
+                        (sobelPion[1, 0] * szary.GetPixel(x - 1, y).R) +
+                        (sobelPion[1, 1] * szary.GetPixel(x, y).R) +
+                        (sobelPion[1, 2] * szary.GetPixel(x + 1, y).R) +
+                        (sobelPion[2, 0] * szary.GetPixel(x - 1, y + 1).R) +
+                        (sobelPion[2, 1] * szary.GetPixel(x, y + 1).R) +
+                        (sobelPion[2, 2] * szary.GetPixel(x + 1, y + 1).R)
+                    );
+
+                    // normalzacja - sprowadzenie wartoœci jasnoœci piksela do zakresu 0-255
+                    int gray = Math.Min(Math.Max(pixelY, 0), 255);
+
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+        private void button23_Click(object sender, EventArgs e) // filtr dolnoprzepustowy (uœrednienie wartoœci pikseli s¹siaduj¹cych)
+        {
+            try
+            {
+                Bitmap img = new Bitmap(pictureBox5.Image);
+                // przekszta³cenie do skali szaroœci
+                Bitmap skalaSzarosci = DoSkaliSzarosci(img);
+
+                pictureBox5.Image = FiltUœredniaj¹cy(skalaSzarosci);
+            }
+            catch
+            {
+                MessageBox.Show("Wczytaj najpierw zdjêcie");
+            }
+        }
+
+
+
+        private Bitmap FiltUœredniaj¹cy(Bitmap szary)
+        {
+            Bitmap wynik = new Bitmap(szary.Width, szary.Height);
+
+            int[,] maska = new int[,]
+            {
+                { 1, 1, 1 },
+                { 1, 1, 1 },
+                { 1, 1, 1 }
+            };
+            int wielkoscMaski = 3; // wymiar macierzy
+            int sumaWartosciMacierzy = 9; // suma wszystkich wartoœci w macierzy
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int suma = 0;
+
+                    // przechodzenie przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPixela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            suma += wartoscPixela * maska[ky, kx];
+                        }
+                    }
+
+                    // œrednia z otoczenia
+                    int srednia = suma / sumaWartosciMacierzy;
+
+                    //srednia = Math.Min(Math.Max(srednia, 0), 255);
+                    wynik.SetPixel(x, y, Color.FromArgb(srednia, srednia, srednia));
+                }
+            }
+
+            return wynik;
+        }
+
+        private void button24_Click(object sender, EventArgs e) // laplasjan 
+        {
+            try
+            {
+
+
+                Bitmap img = new Bitmap(pictureBox5.Image);
+                // przekszta³cenie do skali szaroœci
+                Bitmap skalaSzarosci = DoSkaliSzarosci(img);
+
+                if (radioButton1.Checked == true)
+                {
+                    pictureBox5.Image = Laplasjan1(skalaSzarosci);
+                }
+                else if (radioButton2.Checked == true)
+                {
+                    pictureBox5.Image = Laplasjan2(skalaSzarosci);
+                }
+                else if (radioButton3.Checked == true)
+                {
+                    pictureBox5.Image = Laplasjan3(skalaSzarosci);
+                }
+                else if (radioButton4.Checked == true)
+                {
+                    pictureBox5.Image = Laplasjan4(skalaSzarosci);
+                }
+                else if (radioButton5.Checked == true)
+                {
+                    pictureBox5.Image = Laplasjan5(skalaSzarosci);
+                }
+                else if (radioButton6.Checked == true)
+                {
+                    try
+                    {
+                        int a = Int32.Parse(textBox3.Text);
+                        int b = Int32.Parse(textBox4.Text);        
+                        int c = Int32.Parse(textBox5.Text);
+
+                        int d = Int32.Parse(textBox6.Text);
+                        int ee = Int32.Parse(textBox7.Text);
+                        int f = Int32.Parse(textBox8.Text);
+
+                        int g = Int32.Parse(textBox9.Text);
+                        int h = Int32.Parse(textBox10.Text);
+                        int i = Int32.Parse(textBox11.Text);
+
+                        pictureBox5.Image = Laplasjan6(skalaSzarosci, a, b, c, d, ee, f, g, h, i);
+
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show("Z³a wartoœæ w polu tekstowym!\nPodaj tylko liczby ca³kowite w zakresie 0-255.\n"+ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Zaznacz opcjê!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Wczytaj zdjêcie lub zaznacz opcjê");
+            }
+
+        }
+
+        private Bitmap Laplasjan1(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjanPodstawowy = new int[,] 
+            {
+                { 0, -1, 0 },
+                { -1, 4, -1},
+                { 0, -1, 0 }
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjanPodstawowy[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+
+
+        private Bitmap Laplasjan2(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjan2 = new int[,] 
+            {
+                { 1, -2, 1 },
+                { -2, 4, -2},
+                { 1, -2, 1 }
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjan2[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+        private Bitmap Laplasjan3(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjan3 = new int[,] 
+            {
+                { -1, -1, -1 },
+                { -1, 9, -1},
+                { -1, -1, -1 }
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjan3[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+
+        private Bitmap Laplasjan4(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjan4 = new int[,] 
+            {
+                { 0, -1, 0 },
+                { -1, 5, -1},
+                { 0, -1, 0 }
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjan4[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+
+        private Bitmap Laplasjan5(Bitmap szary)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjan5 = new int[,] 
+            {
+                { 1, -2, 1 },
+                { -2, 5, -2},
+                { 1, -2, 1 }
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjan5[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+        private Bitmap Laplasjan6(Bitmap szary, int a, int b, int c, int d, int e, int f, int g, int h, int i)
+        {
+            Bitmap poFiltracji = new Bitmap(szary.Width, szary.Height);
+
+            int[,] laplasjan5 = new int[,] // customowa maska
+            {                            // fajna maska:
+                { a, b, c },             // { 1, 0, 1 }
+                { d, e, f},              // { 0, -4, 0}
+                { g, h, i }              // { 1, 0, 1 }   
+            };
+
+            int wielkoscMaski = 3;
+
+            for (int y = 1; y < szary.Height - 1; y++)
+            {
+                for (int x = 1; x < szary.Width - 1; x++)
+                {
+                    int wartoscLaplasjan = 0;
+
+                    // PrzejdŸ przez s¹siedztwo piksela
+                    for (int ky = 0; ky < wielkoscMaski; ky++)
+                    {
+                        for (int kx = 0; kx < wielkoscMaski; kx++)
+                        {
+                            int wartoscPiksela = szary.GetPixel(x + kx - 1, y + ky - 1).R;
+                            wartoscLaplasjan += wartoscPiksela * laplasjan5[ky, kx];
+                        }
+                    }
+
+                    // Normalizacja wartoœci piksela do zakresu 0-255
+                    int znormalizowane = Math.Min(Math.Max(wartoscLaplasjan, 0), 255);
+                    poFiltracji.SetPixel(x, y, Color.FromArgb(znormalizowane, znormalizowane, znormalizowane));
+                }
+            }
+
+            return poFiltracji;
+        }
+
+        private void wyjdŸToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(tabControl1.SelectedTab == tabPage1)
+            {
+                Bitmap doZapisu = new Bitmap(pictureBox1.Image);
+           
+                try
+                {
+                    saveFileDialog1.Title = "Tylko pliki z rozszerzeniem .jpeg";
+                    saveFileDialog1.Filter = "Tylko pliki tekstowe (*.jpeg) | *.jpeg";
+                    saveFileDialog1.DefaultExt = "jpeg";
+                    saveFileDialog1.FileName = "Obraz w skali szaroœci";
+
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        doZapisu.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);                       
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("B³¹d!\n" + ex.Message);
+                }
+            }else if(tabControl1.SelectedTab == tabPage3)
+            {
+                Bitmap doZapisu = new Bitmap(pictureBox3.Image);
+
+                try
+                {
+                    saveFileDialog1.Title = "Tylko pliki z rozszerzeniem .jpeg";
+                    saveFileDialog1.Filter = "Tylko pliki tekstowe (*.jpeg) | *.jpeg";
+                    saveFileDialog1.DefaultExt = "jpeg";
+                    saveFileDialog1.FileName = "Obraz przekszta³cony punktowo";
+
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        doZapisu.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("B³¹d!\n" + ex.Message);
+                }
+            }else if (tabControl1.SelectedTab == tabPage4)
+            {
+                Bitmap doZapisu = new Bitmap(pictureBox4.Image);
+
+                try
+                {
+                    saveFileDialog1.Title = "Tylko pliki z rozszerzeniem .jpeg";
+                    saveFileDialog1.Filter = "Tylko pliki tekstowe (*.jpeg) | *.jpeg";
+                    saveFileDialog1.DefaultExt = "jpeg";
+                    saveFileDialog1.FileName = "Obraz poddany binaryzacji";
+
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        doZapisu.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("B³¹d!\n" + ex.Message);
+                }
+            }else if(tabControl1.SelectedTab == tabPage5)
+            {
+                Bitmap doZapisu = new Bitmap(pictureBox5.Image);
+
+                try
+                {
+                    saveFileDialog1.Title = "Tylko pliki z rozszerzeniem .jpeg";
+                    saveFileDialog1.Filter = "Tylko pliki tekstowe (*.jpeg) | *.jpeg";
+                    saveFileDialog1.DefaultExt = "jpeg";
+                    saveFileDialog1.FileName = "Obraz przekszta³cony kontekstowo";
+
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        doZapisu.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("B³¹d!\n" + ex.Message);
+                }
+            }
+            
+        }
+
+        //      ZABEZPIECZYC    
+
+        //     if (pictureBox1.Image != null)
+        //    {
+        //        Bitmap oryginalne = new Bitmap(pictureBox1.Image);
+        //Bitmap skalaSzarosci = DoSkaliSzarosci(oryginalne);
+        //pictureBox1.Image = skalaSzarosci;
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Wczytaj najpierw zdjêcie");
+        //    }
     }
 }
